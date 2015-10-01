@@ -1,0 +1,1 @@
+function pageInit(){isAniSupport()||iDiaglog.alert({t:"folder",c:"Sorry. This Browser doesn't support folder.",conText:"Thank you"})};/*programed by mei(李維翰), http://www.facebook.com/mei.studio.li*/
