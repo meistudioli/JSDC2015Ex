@@ -1,26 +1,3 @@
-<?php
-$data = array(
-	'duration' => '5s',
-	'startMode' => '0',
-	'links' => array(
-		array(
-			'link' => '?avengers',
-			'img' => 'img/folder/avengers.jpg'
-		),
-		array(
-			'link' => '?avengers0',
-			'img' => 'img/folder/avengers_0.jpg'
-		),
-		array(
-			'link' => '?avengers1',
-			'img' => 'img/folder/avengers_1.jpg'
-		)
-	)
-);
-unset($data['links']);
-$data = htmlspecialchars(json_encode($data), ENT_QUOTES, 'UTF-8');
-$data = " data-conf='".$data."'";
-?>
 <!DOCTYPE html>
 <html lang="en" x-frame-options="sameorigin">
 <head>
@@ -55,7 +32,7 @@ $data = " data-conf='".$data."'";
 </header>
 
 <main id="bd" role="main">
-	<folder-module<?php echo $data; ?> hidden>
+	<folder-module hidden>
 		<h3>folder</h3>
 		<a href="?avengers" title="click for avengers" hidden><img src="img/folder/avengers.jpg"></a>
 		<a href="?avenger0" title="click for captain" hidden><img src="img/folder/avengers_0.jpg"></a>
